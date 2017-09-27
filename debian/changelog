@@ -1,0 +1,23 @@
+golang-github-hashicorp-go-memdb (0.0~git20170123.0.c01f56b-2) unstable; urgency=medium
+
+  * Replace golang-go with golang-any in Build-Depends, remove golang-go from Depends
+
+ -- Konstantinos Margaritis <markos@debian.org>  Tue, 08 Aug 2017 14:12:20 +0300
+
+golang-github-hashicorp-go-memdb (0.0~git20170123.0.c01f56b-1) unstable; urgency=medium
+
+  [ Paul Tagliamonte ]
+  * Team upload.
+  * Use a secure transport for the Vcs-Git and Vcs-Browser URL
+
+  [ Tim Potter ]
+  * New upstream snapshot.
+  * Standards-Version: 3.9.8
+
+ -- Tim Potter <tpot@hpe.com>  Wed, 25 Jan 2017 09:11:43 +1100
+
+golang-github-hashicorp-go-memdb (0.0~git20160301.0.98f52f5-1) unstable; urgency=medium
+
+  * Initial release (Closes: #816822).
+
+ -- Dmitry Smirnov <onlyjob@debian.org>  Sun, 06 Mar 2016 01:14:37 +1100

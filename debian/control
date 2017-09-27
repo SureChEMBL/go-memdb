@@ -1,0 +1,26 @@
+Source: golang-github-hashicorp-go-memdb
+Section: devel
+Priority: extra
+Maintainer: Debian Go Packaging Team <pkg-go-maintainers@lists.alioth.debian.org>
+Uploaders: Dmitry Smirnov <onlyjob@debian.org>, Tim Potter <tpot@hpe.com>
+Build-Depends: debhelper (>= 9),
+               dh-golang,
+               golang-any,
+               golang-github-hashicorp-go-immutable-radix-dev
+Standards-Version: 3.9.8
+Homepage: https://github.com/hashicorp/go-memdb
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-go/packages/golang-github-hashicorp-go-memdb.git
+Vcs-Git: https://anonscm.debian.org/git/pkg-go/packages/golang-github-hashicorp-go-memdb.git
+XS-Go-Import-Path: github.com/hashicorp/go-memdb
+
+Package: golang-github-hashicorp-go-memdb-dev
+Architecture: all
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         golang-github-hashicorp-go-immutable-radix-dev
+Description: in-memory database built on immutable radix trees
+ Implementation of a simple in-memory database built on immutable radix
+ trees. The database provides Atomicity, Consistency and Isolation from
+ ACID. Being that it is in-memory, it does not provide durability. The
+ database is instantiated with a schema that specifies the tables and
+ indicies that exist and allows transactions to be executed.
